@@ -1,5 +1,5 @@
 I instantly recognized this from a chall on cyberedu and had an exploit script almost working already.
-Asa ca doar am verificat cu objdump daca are symbols si am aplicat scriptul urmator:
+So i verified if the binary has symbols with objdump and i applied the following code:
 
 
 from pwn import *
