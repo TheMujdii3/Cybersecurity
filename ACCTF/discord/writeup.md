@@ -1,0 +1,1 @@
+Ok for this search i basically digged up the whole discord server only to find out when i wanted to send a sticker on general_en that there is a sticker with a qr.I tried to scan it but i didnt work and i sent it to one of my teammates and he actually scanned it with his phone(it was hilarious that he could do that and i couldn't with my phone/phython)
