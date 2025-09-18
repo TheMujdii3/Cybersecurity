@@ -1,7 +1,7 @@
 So i tried to get some ascii out of the logs files using string and managed to get nothing:)
 After that I tried to find something in vanguard anticheat website and again found nothign
-Then i randomly found this article "https://www.unknowncheats.me/forum/anti-cheat-bypass/488665-vanguard-log-decryptor.html#google_vignette" which gave me a good decryption script.Using that script i managed to get this file (decoded2.txt) and i gave it to
-chatgp and using b64 decryption managed to find something ctf{...} like.
+Then i randomly found this article "https://www.unknowncheats.me/forum/anti-cheat-bypass/488665-vanguard-log-decryptor.html#google_vignette" which gave me a good decryption script.Using that script i managed to get this file (decoded2.txt).
+Then i loaded the decoded file in cyberchef and used b64 decryption and searched for ctf{ and like in the screenshot i got the flag
 
 # Decode logs script
 #!/usr/bin/env python3
@@ -84,5 +84,5 @@ if __name__ == "__main__":
     main()
 
 
-then i loaded the decoded file in cyberchef and used b64 decryption and searched for ctf{ and like in the screenshot i got the flag
+
 # Flag: ctf{8a11dec7958808f0145aa8bb958f2332a53b6c210776adb9264738b9a31f65cf}
