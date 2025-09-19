@@ -1,1 +1,0 @@
-This one was solved during my physics class because i was extremly bored and I just downloaded the photo on my phone and used google search.As a result in the first few links there was this one " https://www.booking.com/Share-RrlQn39" which actually has the original photo (or some of it) between it's photos.
