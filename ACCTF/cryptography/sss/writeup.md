@@ -1,6 +1,16 @@
-I used chatgpt to generate a decoding script for this chall. 
-# The script: 
-`
+# _sss_
+
+Category | Value
+-- | --
+Crypto | 100
+
+***
+
+I used ChatGPT to generate a decoding script for this challenge. The challenge provided three hex-encoded shares; the script:
+
+
+## Solver 
+```python
 import re
 
 IRR = 0x11B  # x^8 + x^4 + x^3 + x + 1
@@ -115,7 +125,10 @@ if __name__ == "__main__":
     else:
         print("[i] No ctf{...} found in ASCII preview. If the flag is encoded,")
         print("    try decoding the hex/bytes above (e.g., base64, zlib, etc.).")
-`
-and got the flag.
+```
 
-# Flag: ctf{d6b72529c6177d8f648ae85f624a24d6f1edce5ca29bd7cc0b888e117a123892}
+
+## Proof-of-flag
+```
+ctf{d6b72529c6177d8f648ae85f624a24d6f1edce5ca29bd7cc0b888e117a123892}
+```

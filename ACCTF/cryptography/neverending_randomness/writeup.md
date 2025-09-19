@@ -1,5 +1,13 @@
-Because of my lazyness to code a decoding script I used my brother gpt to decode the flag for me and he really did a good job with some trial and error decoding.
-I got 3 or 4 diffrent flags in the chat and i dont really remember which one was the good one but for proof I will leave a link
-of my gpt chat here.
+# _neverending-randomness_
 
-# Chatgpt: https://chatgpt.com/share/68cceb39-1e54-8006-ac54-ca07502e7fc9
+Category | Value
+-- | --
+Misc | 100
+
+***
+
+Out of pure laziness I didn’t bother writing a decoding script myself. Instead, I handed the challenge to my “brother” ChatGPT, and after some trial-and-error decoding attempts it eventually produced the correct flag.
+
+I actually saw 3–4 different candidate flags in that chat, and I don’t even remember exactly which one turned out to be the valid one. For proof though, here’s the link to the GPT session:
+
+**ChatGPT:** [https://chatgpt.com/share/68cceb39-1e54-8006-ac54-ca07502e7fc9](https://chatgpt.com/share/68cceb39-1e54-8006-ac54-ca07502e7fc9)
