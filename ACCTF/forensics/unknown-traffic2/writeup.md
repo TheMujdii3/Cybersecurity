@@ -13,8 +13,3 @@ I inspected the capture and noticed several HTTP packets carrying chunked payloa
 ```
 
 I exported the matching packets as `chunks.pcap`, extracted and reassembled the chunked bodies, and reconstructed the embedded image (`imagine.png`). Scanning the QR code in that image revealed the flag.
-
-### Proof-of-flag
-```
-
-```
