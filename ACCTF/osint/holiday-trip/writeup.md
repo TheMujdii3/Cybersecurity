@@ -1,3 +1,16 @@
-According to the photo provided in the top right part of the panel there are some mugs with "golden sands" written on them.
+# _holiday-trip_
 
-# That's the answer
+Category | Value
+-- | --
+OSINT | 100
+
+***
+
+Looking closely at the provided photo, I noticed in the **top-right corner of the panel** some mugs with the words **“golden sands”** written on them.
+
+That was the answer.
+
+## Proof-of-flag 
+```
+CTF{nisipurile_de_aur}
+```

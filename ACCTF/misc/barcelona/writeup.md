@@ -1,1 +1,14 @@
-We used the website https://theskylive.com/ which, after entering the date time and location provided us with an approximate distance between Barcelona and Mars
+# _Escaping_Barcelona_
+
+Category | Value
+-- | --
+Misc | 100
+
+***
+
+Using the site [TheSkyLive](https://theskylive.com/), I entered the given date, time, and location. The tool provided the approximate distance from **Barcelona to Mars**, which gave the final flag.
+
+### Proof-of-flag 
+```
+ctf{361.290 M km}
+```
