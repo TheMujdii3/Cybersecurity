@@ -1,5 +1,18 @@
-This chall was a delight for me because I posses a ham radio operator license and imediatly recognized the call.
+# _Baofeng_
 
-# Callsign: YO2TSS
+Category | Value
+-- | --
+Forensics | 100
 
-I got the QTH KN15KS and used this website "https://qsl.design/en/find-qth-locator/" to get the city. 
+***
+
+This challenge was especially fun since I hold a ham radio operator license and immediately recognized the callsign.
+
+* **Callsign:** `YO2TSS`
+* From the callsign, I retrieved the **QTH locator:** `KN15KS`.
+* Using the site [qsl.design](https://qsl.design/en/find-qth-locator/), I converted the locator into the corresponding city and obtained the solution.
+
+### Proof-of-flag:
+```
+
+```

@@ -1,9 +1,17 @@
-So i tried to get some ascii out of the logs files using string and managed to get nothing:)
-After that I tried to find something in vanguard anticheat website and again found nothign
-Then i randomly found this article "https://www.unknowncheats.me/forum/anti-cheat-bypass/488665-vanguard-log-decryptor.html#google_vignette" which gave me a good decryption script.Using that script i managed to get this file (decoded2.txt).
-Then i loaded the decoded file in cyberchef and used b64 decryption and searched for ctf{ and like in the screenshot i got the flag
+# _Anticheat_
 
-# Decode logs script
+Category | Value
+-- | --
+Forensics | 449
+
+***
+
+I tried `strings` on the Vanguard log files but got nothing. A site search of the Vanguard anti-cheat docs also turned up nothing useful.
+Then I found an UnknownCheats thread with a decryption script that worked. Using that script I decoded the `vgc_*.log` into `decoded2.txt`, loaded the result into CyberChef, applied Base64 decode, and recovered the flag.
+
+### Decode logs script
+
+```python
 #!/usr/bin/env python3
 import struct
 import sys
@@ -54,7 +62,7 @@ def main():
         print("Invalid file: too short")
         sys.exit(1)
 
-    DATA = DATA[4:]  # skip magic?
+    DATA = DATA[4:]  # skip header/magic
     REAL_KEY = [DATA[i] ^ KEYMASK[i] for i in range(32)]
     DATA = DATA[32:]
 
@@ -82,7 +90,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
+### Final step & result
 
+* Open `decoded2.txt` in CyberChef (or any Base64 tool).
+* Apply Base64 decode and search for `ctf{`.
 
-# Flag: ctf{8a11dec7958808f0145aa8bb958f2332a53b6c210776adb9264738b9a31f65cf}
+### Proof-of-flag 
+```
+ctf{8a11dec7958808f0145aa8bb958f2332a53b6c210776adb9264738b9a31f65cf}`
+```
+

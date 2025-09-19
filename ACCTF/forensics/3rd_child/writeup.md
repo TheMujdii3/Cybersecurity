@@ -1,2 +1,18 @@
-I immediately loaded the .wav file in audacity hoping that i would get the flag in spectanogram form and this was it.
-I switched each output to spectanogram and observed that the 3rd one contains the flag so i eliminated the first 2 outputs and put some limits for the spectanogram 700-4000 and got the flag like in screenshot.
+# _3RD_child_
+
+Category | Value
+-- | --
+Forensics | 100
+
+***
+
+I loaded the `.wav` file into **Audacity**, expecting to uncover the flag in spectrogram form—and that’s exactly what happened.
+
+After switching each output to **spectrogram view**, I noticed that the **third track contained the flag**, so I eliminated the first two. By adjusting the spectrogram range to **700–4000 Hz**, the hidden flag became clearly visible, just like in the screenshot.
+
+
+## Proof-of-flag
+
+```
+
+```

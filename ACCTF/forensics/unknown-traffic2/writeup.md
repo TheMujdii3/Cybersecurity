@@ -1,2 +1,20 @@
-I took a look around and and observed that some http packets have chunks of data in them. I used this filter in wireshark "(frame contains "chunk") && (_ws.col.protocol == "HTTP")" and managed to get all http packets with chunks of data (chunks.pcap).
-After that i used chatgpt for faster processing and got an image containing a qr code (imagine.png) which contains the flag.
+# _Unknown-traffic-2_
+
+Category | Value
+-- | --
+Forensics | 100
+
+***
+
+I inspected the capture and noticed several HTTP packets carrying chunked payloads. Using Wireshark I filtered for those packets with:
+
+```
+(frame contains "chunk") && (_ws.col.protocol == "HTTP")
+```
+
+I exported the matching packets as `chunks.pcap`, extracted and reassembled the chunked bodies, and reconstructed the embedded image (`imagine.png`). Scanning the QR code in that image revealed the flag.
+
+### Proof-of-flag
+```
+
+```
